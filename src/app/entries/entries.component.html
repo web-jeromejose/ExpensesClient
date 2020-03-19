@@ -1,0 +1,17 @@
+<p>
+ this is the entries section
+ <button mat-button>Click Me! Material Design</button>
+ <br>
+ <mat-checkbox   class = "check" > 
+    <label>checkboxmaterial </label> 
+</mat-checkbox>
+
+
+</p>
+<p *ngFor="let alert of alerts">
+    <ngb-alert [type]="alert.type" (close)="close(alert)">{{ alert.message }}</ngb-alert>
+</p>
+<p>
+    <button type="button" class="btn btn-primary dark" (click)="reset()">Reset</button>
+</p>
+ 
